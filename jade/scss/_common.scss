@@ -1,0 +1,163 @@
+.container {
+  width: 946px;
+  margin: 0 auto;
+}
+
+body {
+  transition : 0.5s all linear;
+  width: 100%;
+  font-size: 18px;
+  font-family: $robotoLightItalic;
+  color: $black;
+}
+
+b, strong {
+  font-weight: 800;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.mask-body {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #bbb;
+  opacity: 0.5;
+  display: none;
+}
+.text-orange {
+  color: $orange;
+}
+
+#header {
+  height: 85px;
+  @include box-sizing();
+  .header-content {
+    padding-top: 20px;
+    * {
+      vertical-align: middle;
+    }
+  }
+  #information-contact {
+    display: inline-block;
+    float: right;
+    a {
+      display: block;
+      text-align: right;
+    }
+    .phone-number {
+      font-family: $robotoBoldItalic;
+    }
+  }
+  #logo {
+    display: inline-block;
+    margin: 0 0 0 290px;
+  }
+  #menu {
+    display: inline-block;
+    cursor: pointer;
+    span {
+      font-family: $robotoBold;
+      padding-left: 7px;
+      font-size: 22px;
+    }
+  }
+}
+
+nav#menu-right {
+  transition: 0.5s margin-left linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: -100%;
+  background: #292835;
+  color: $white;
+  text-transform: uppercase;
+  font-family: ' roboto-bolditalic ';
+  font-size: 22px;
+  width: 312px;
+  height: 100%;
+  z-index: 10;
+  overflow: scroll;
+  padding-top: 85px;
+  @include box-sizing();
+
+  ul.menu-list {
+    margin-bottom: 156px;
+    li {
+      &:hover {
+        background: $orange;
+      }
+      &:hover a {
+        border-bottom: 1px solid $orange;
+        border-top: 1px solid $orange;
+      }
+      a {
+        display: block;
+        padding: 30px 0 30px 0;
+        height: 100%;
+        margin-left: 55px;
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+
+  ul.social {
+    padding-left: 55px;
+    li {
+      display: inline-block;
+      padding-right: 20px;
+    }
+  }
+
+}
+
+footer#footer {
+  box-sizing: border-box;
+  height: 60px;
+  background: #272735;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 20px;
+  ul,
+  ul li {
+    display: inline-block;
+  }
+
+  ul.left-footer {
+
+    li {
+      margin-right: 50px;
+      span:first-child {
+        font-family: $robotoBold;
+      }
+      span:last-child {
+        font-family: $robotoRegular;
+      }
+    }
+    .term-condition {
+      font-family: $robotoRegular;
+    }
+  }
+
+  * {
+    vertical-align: middle;
+  }
+
+  ul.right-footer {
+    float: right;
+    font-size: 12px;
+    font-family: $robotoLight;
+  }
+}
+@media screen and (max-width: 946px) {
+  body{
+    width: 946px;
+  }
+}
+

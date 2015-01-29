@@ -1,2 +1,16 @@
 extends index
 block main
+  section.home-page
+    figure#slide
+      .mask-slide
+      .wrapper-img
+        img(src='scss/img/background_1.jpg' alt='' widht='1200px')
+    .container-home-page
+      .container
+        .wrapper-content-home-page
+          h1 Residential & Commercial
+            span  Electrical Services
+          h2 Data and communications, fire protection, intercom systems, security alarms, cameras, and home automation
+          ul.other-menu
+            each row in ['residental','commercial','industrial','strata']
+              li: a(href='')= row

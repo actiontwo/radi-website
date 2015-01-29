@@ -1,0 +1,24 @@
+[class*='iconsp-'] {
+  display: inline-block;
+  background: url('img/icon-sprite.png') no-repeat;
+  height: 32px;
+  width: 32px;
+}
+
+.iconsp-facebook {
+  background-position: -64px 0;
+}
+
+.iconsp-instagram {
+  background-position: -32px 0;
+}
+
+.iconsp-twitter {
+  background-position: 0 0;
+}
+
+.iconsp-menu {
+  background-position: 0px -34px;
+  height: 27px;
+  width: 30px;
+}
