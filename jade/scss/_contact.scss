@@ -1,0 +1,79 @@
+@function setWithLayout($width, $mainWidth) {
+  @return $width/$mainWidth*100%
+}
+
+#contact-page {
+  background: $purple;
+  padding: 63px 0 112px 0;
+  * {
+    vertical-align: top;
+  }
+  .left-contact-page {
+    color: #fff;
+    width: setWithLayout(400, $mainWidth);
+    display: inline-block;
+    margin-right: setWithLayout(50, $mainWidth);
+    .title-contact {
+      font-size: 48px;
+      font-weight: 500;
+      font-style: italic;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .content-contact {
+      font-size: 20px;
+      font-family: "Roboto";
+      font-weight: 100;
+      font-style: italic;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    .info-contact {
+      font-size: 20px;
+      ul {
+        margin-bottom: 30px;
+        li:last-child {
+          line-height: 26px;
+          font-weight: 100;
+          font-style: italic;
+        }
+      }
+      .title-info {
+        font-weight: 400;
+        font-style: italic;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .right-contact-page {
+    color: #fff;
+    display: inline-block;
+    width: setWithLayout(504, $mainWidth);
+    background: $orange;
+
+    .make-an-enquiry {
+
+      margin: 31px 50px 53px;
+      legend {
+        font-size: 30px;
+        font-weight: 400;
+        font-style: italic;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+      input, select, textarea {
+        width: 100%;
+        color: #1D1D1B;
+        margin-bottom: 21px;
+      }
+      textarea {
+        height: 95px;
+      }
+      .submit {
+        color: #fff;
+      }
+
+    }
+  }
+}

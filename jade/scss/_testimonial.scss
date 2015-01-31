@@ -1,0 +1,48 @@
+#banner-page.testimonial-banner {
+  top: -16px;
+}
+
+#testimonials {
+  padding-bottom: 25px;
+  .testimonials-logo {
+    margin-top: 15px;
+
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .testimonials-content {
+    border-bottom: 1px solid #b1b1b1;
+    padding: 80px 0 30px 0;
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+  .testimonials-detail {
+    display: inline-block;
+    width: 75%;
+
+    .content {
+      font-size: 19px;
+      line-height: 27px;
+      margin-bottom: 25px;
+    }
+    .title {
+      font-size: 36px;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .info {
+
+      font-size: 19px;
+      li {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}

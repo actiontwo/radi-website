@@ -1,0 +1,52 @@
+extends layout
+block headerpage
+  section#banner-page
+    .container_1366
+      .container
+        .banner-detail
+          .banner-text
+            h1 custom solutions
+            p
+              | Nullam dictum felis eu pede mollis pretium.
+              | Integer tincidunt. Cras dapibus. Vivamus
+              | elementum semper nisi. Aenean vulputate
+              | eleifend tellus. Aenean leo ligula, porttitor eu,
+          figure.banner-image
+            img(src='images/custom-made-solution.png' alt='')
+block main
+  section#custom-made-solution-page
+    .container
+      .left-custom-page
+        each val,index in {'people':'consult','time':'time management and scheduling','schedule':'quality control and assurance'}
+          article.feature-custom
+            .title-custom
+              h1
+                img(src='images/#{index}.png' width='60' height='60')
+                a(href='#')= val
+            .content-custom
+               p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+      .right-custom-page
+        each val,index in {'money':'develop a budget framework','plan':'plan for procuring right equipment','calc':'resource management'}
+          article.feature-custom
+            .title-custom
+              h1
+                img(src='images/#{index}.png' width='60' height='60')
+                a(href='#')= val
+            .content-custom
+              p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate
+      form.make-an-enquiry-custom(action='',method='post')
+        fieldset
+          .left-an-enquiry
+            legend make an enquiry
+            input.input-form(type='text'  placeholder='FULL NAME'           name='fullname')
+            input.input-form(type='text'  placeholder='MOBILE PHONE NUMBER' name='mobilePhoneNumber')
+            input.input-form(type='email' placeholder='EMAIL'               name='email')
+          .right-an-enquiry
+            select.select-form(name='subject')
+              option(value='' disabled selected): span(style='color:#B1B1B1') SUBJECT
+              option(value='residential') residential
+              option(value='commercial')  commercial
+              option(value='industrial')  industrial
+              option(value='strata')      strata
+            textarea(placeholder='MESSAGE')
+            input.submit(type='submit' value='submit')

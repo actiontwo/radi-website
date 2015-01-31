@@ -1,24 +1,30 @@
 .container {
-  width: 946px;
+  width: 960px;
   margin: 0 auto;
+}
+.container_1366{
+  width: 1366px;
+  margin: 0 auto;
+  position: relative;
 }
 
 body {
-  transition : 0.5s all linear;
+  transition: 0.5s all linear;
   width: 100%;
   font-size: 18px;
-  font-family: $robotoLightItalic;
+  font-family: 'Roboto';
   color: $black;
+  font-weight: 200;
 }
 
 b, strong {
   font-weight: 800;
 }
-
 a {
   color: inherit;
   text-decoration: none;
 }
+
 .mask-body {
   position: fixed;
   top: 0;
@@ -30,6 +36,7 @@ a {
   opacity: 0.5;
   display: none;
 }
+
 .text-orange {
   color: $orange;
 }
@@ -51,7 +58,12 @@ a {
       text-align: right;
     }
     .phone-number {
-      font-family: $robotoBoldItalic;
+      //      font-family: $robotoBoldItalic;
+      font-style: italic;
+      font-weight: 500;
+    }
+    .email-info {
+      font-weight: 300;
     }
   }
   #logo {
@@ -155,8 +167,47 @@ footer#footer {
     font-family: $robotoLight;
   }
 }
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.input-form, .select-form, textarea {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  @include box-sizing();
+  background: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 100;
+}
+.submit {
+  border: 0;
+  margin-bottom: 0;
+  color: #fff;
+  background: $purple;
+  border-radius: 5px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  cursor: pointer;
+}
+.clearfix{
+  clear: both;
+}
 @media screen and (max-width: 946px) {
-  body{
+  body {
     width: 946px;
   }
 }

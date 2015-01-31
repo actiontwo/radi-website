@@ -1,0 +1,40 @@
+extends layout
+block main
+  section#contact-page.main-content-page
+    .container
+      .left-contact-page
+        h1.title-contact contact us
+        p.content-contact Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+        .info-contact
+          ul.address
+            li.title-info address
+            li: pre PO Box 7321
+              | Mount Annan
+              | NSW 2567
+          ul.email
+            li.title-info email
+            li: a(href='emailto:info@radielectrical.com.au') info@radielectrial.com.au
+          ul.techinical-support
+            li.title-info techinical support
+            li: a(href='tel:0296772222') (02) 96772222
+          ul.general-enquiries
+            li.title-info general enquiries
+            li: a(href='tel:1800212213') 1800212213
+      .right-contact-page
+        form.make-an-enquiry(action='',method='post')
+          fieldset
+            legend make an enquiry
+            input.input-form(type='text'  placeholder='FULL NAME'           name='fullname')
+            input.input-form(type='text'  placeholder='MOBILE PHONE NUMBER' name='mobilePhoneNumber')
+            input.input-form(type='email' placeholder='EMAIL'               name='email')
+
+            select.select-form(name='subject')
+              option(value='' disabled selected): span(style='color:#B1B1B1') SUBJECT
+              option(value='residential') residential
+              option(value='commercial')  commercial
+              option(value='industrial')  industrial
+              option(value='strata')      strata
+            textarea(placeholder='MESSAGE')
+            input.submit(type='submit' value='submit')
+
+
