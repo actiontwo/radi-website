@@ -1,0 +1,50 @@
+extends layout
+block headerpage
+  section#banner-page
+    .container_1366
+      .container
+        .banner-detail
+          nav.menu-service
+            ul
+              li: a(href='service-residential.html') residential
+              li.active: a(href='service-commercial.html') commercial
+              li: a(href='service-industrial.html') industrial
+              li: a(href='service-strata.html') strata
+
+          .content-service-page
+            p Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim
+
+block main
+  section#service-page-detail
+    .container
+      .art-service-detial
+        figure.main-img-service
+          img(src='images/commercial.jpg' alt='')
+        .position-art
+          a(data-position='left' data-left='0' data-top='160').light(href='javascript:void(0)') light
+          a(data-position='top' data-left='370' data-top='30' ).air-conditioner(href='javascript:void(0)') air conditioner
+          a(data-position='right' data-right='20' data-top='196').power(href='javascript:void(0)') power
+          a(data-position='right' data-right='0' data-top='390' ).security(href='javascript:void(0)') security
+          a(data-position='left' data-left='-20' data-top='362').fire-protection(href='javascript:void(0)') fire protection
+        .point-art
+          i(data-left='399' data-top='275').light
+          i(data-left='469' data-top='211').air-conditioner
+          i(data-right='315' data-top='206').power
+          i(data-right='351' data-top='472').security(href='')
+          i(data-left='444' data-top='456').fire-protection(href='')
+        .line-art
+          //svg
+            //line(left='177px', top='177px', x2='400', y2='284px', style='stroke:#de5d38;stroke-width:1;')
+    .detail-content-service-page
+
+      .content-detail-service
+        .wrapper-content-service-page
+          .size-content-service-page
+            each val in ['light','air-conditioner','power','security','fire-protection']
+              .service-page
+                h3.title-content-detail-service= val
+                .desc-content-detail-service
+                  p
+                    | Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                    | sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
+                    | sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.

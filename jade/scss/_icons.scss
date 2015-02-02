@@ -4,7 +4,11 @@
   height: 32px;
   width: 32px;
 }
-
+[class *='iconsp-service-'] {
+  background: url('img/service-icon.png') no-repeat;
+  height: 90px;
+  width: 90px;
+}
 .iconsp-facebook {
   background-position: -64px 0;
 }
@@ -21,4 +25,16 @@
   background-position: 0px -34px;
   height: 27px;
   width: 30px;
+}
+.iconsp-service-commercial{
+  background-position: -180px 0;
+}
+.iconsp-service-industrial{
+  background-position: -90px 0;
+}
+.iconsp-service-residental{
+  background-position: 0 0;
+}
+.iconsp-service-strata{
+  background-position: -270px 0;
 }

@@ -94,23 +94,45 @@ table {
   height: 32px;
   width: 32px; }
 
-/* line 8, ../../jade/scss/_icons.scss */
+/* line 7, ../../jade/scss/_icons.scss */
+[class*='iconsp-service-'] {
+  background: url("img/service-icon.png") no-repeat;
+  height: 90px;
+  width: 90px; }
+
+/* line 12, ../../jade/scss/_icons.scss */
 .iconsp-facebook {
   background-position: -64px 0; }
 
-/* line 12, ../../jade/scss/_icons.scss */
+/* line 16, ../../jade/scss/_icons.scss */
 .iconsp-instagram {
   background-position: -32px 0; }
 
-/* line 16, ../../jade/scss/_icons.scss */
+/* line 20, ../../jade/scss/_icons.scss */
 .iconsp-twitter {
   background-position: 0 0; }
 
-/* line 20, ../../jade/scss/_icons.scss */
+/* line 24, ../../jade/scss/_icons.scss */
 .iconsp-menu {
   background-position: 0px -34px;
   height: 27px;
   width: 30px; }
+
+/* line 29, ../../jade/scss/_icons.scss */
+.iconsp-service-commercial {
+  background-position: -180px 0; }
+
+/* line 32, ../../jade/scss/_icons.scss */
+.iconsp-service-industrial {
+  background-position: -90px 0; }
+
+/* line 35, ../../jade/scss/_icons.scss */
+.iconsp-service-residental {
+  background-position: 0 0; }
+
+/* line 38, ../../jade/scss/_icons.scss */
+.iconsp-service-strata {
+  background-position: -270px 0; }
 
 /* line 1, ../../jade/scss/_common.scss */
 .container {
@@ -639,3 +661,184 @@ section.home-page {
       /* line 43, ../../jade/scss/_testimonial.scss */
       #testimonials .testimonials-detail .info li {
         margin-bottom: 6px; }
+
+/* line 2, ../../jade/scss/_service.scss */
+#service-page {
+  margin: 83px 0 0 0; }
+  /* line 4, ../../jade/scss/_service.scss */
+  #service-page .left-side {
+    width: 155px;
+    display: inline-block; }
+    /* line 7, ../../jade/scss/_service.scss */
+    #service-page .left-side .image-service {
+      display: block;
+      border: 2px solid #de5d38;
+      border-radius: 50%;
+      height: 155px;
+      width: 155px;
+      padding: 30px;
+      box-sizing: border-box; }
+      /* line 15, ../../jade/scss/_service.scss */
+      #service-page .left-side .image-service:hover {
+        background: #de5d38;
+        border-color: #de5d38; }
+        /* line 18, ../../jade/scss/_service.scss */
+        #service-page .left-side .image-service:hover [class*='iconsp-service'] {
+          background-position-y: -90px; }
+  /* line 24, ../../jade/scss/_service.scss */
+  #service-page .right-side {
+    display: inline-block;
+    width: 235px;
+    margin-left: 55px; }
+  /* line 29, ../../jade/scss/_service.scss */
+  #service-page .service-detail {
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 83px; }
+    /* line 33, ../../jade/scss/_service.scss */
+    #service-page .service-detail .desc-service-content {
+      font-size: 20px;
+      font-weight: 200;
+      line-height: 28px;
+      font-style: italic; }
+    /* line 39, ../../jade/scss/_service.scss */
+    #service-page .service-detail .title-service-content {
+      font-size: 36px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-bottom: 10px; }
+
+/* line 49, ../../jade/scss/_service.scss */
+#banner-page .menu-service {
+  margin-bottom: 23px; }
+  /* line 52, ../../jade/scss/_service.scss */
+  #banner-page .menu-service ul .active {
+    color: #fff; }
+  /* line 55, ../../jade/scss/_service.scss */
+  #banner-page .menu-service ul li {
+    display: inline-block;
+    font-size: 31px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    color: #6F6F6E;
+    padding-right: 45px; }
+    /* line 64, ../../jade/scss/_service.scss */
+    #banner-page .menu-service ul li a:hover {
+      color: #fff; }
+/* line 73, ../../jade/scss/_service.scss */
+#banner-page .banner-detail .content-service-page p {
+  font-size: 18px;
+  width: 100%; }
+
+/* line 80, ../../jade/scss/_service.scss */
+#service-page-detail {
+  padding: 40px 0; }
+  /* line 82, ../../jade/scss/_service.scss */
+  #service-page-detail figure.main-img-service {
+    text-align: center; }
+  /* line 86, ../../jade/scss/_service.scss */
+  #service-page-detail .art-service-detial {
+    position: relative; }
+  /* line 90, ../../jade/scss/_service.scss */
+  #service-page-detail .position-art {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+    /* line 96, ../../jade/scss/_service.scss */
+    #service-page-detail .position-art a {
+      position: absolute;
+      text-transform: uppercase;
+      border-radius: 6px;
+      box-shadow: 1px 1px 7px -2px rgba(0, 0, 0, 0.5);
+      font-weight: 300;
+      color: #de5d38;
+      border: 1px solid #de5d38;
+      padding: 8px 15px;
+      min-width: 145px;
+      text-align: center;
+      display: block;
+      background: #fff; }
+      /* line 109, ../../jade/scss/_service.scss */
+      #service-page-detail .position-art a:hover {
+        background: #de5d38;
+        color: #fff; }
+  /* line 115, ../../jade/scss/_service.scss */
+  #service-page-detail .point-art i {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    display: block;
+    border-radius: 50%;
+    background: #de5d38; }
+  /* line 123, ../../jade/scss/_service.scss */
+  #service-page-detail .line-art {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    /* line 128, ../../jade/scss/_service.scss */
+    #service-page-detail .line-art svg {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+  /* line 135, ../../jade/scss/_service.scss */
+  #service-page-detail .position-art {
+    z-index: 1; }
+  /* line 138, ../../jade/scss/_service.scss */
+  #service-page-detail line {
+    stroke: #de5d38; }
+
+/* line 143, ../../jade/scss/_service.scss */
+#service-page-detail {
+  position: relative; }
+  /* line 147, ../../jade/scss/_service.scss */
+  #service-page-detail .detail-content-service-page {
+    z-index: 3;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); }
+    /* line 150, ../../jade/scss/_service.scss */
+    #service-page-detail .detail-content-service-page .active {
+      display: none; }
+  /* line 161, ../../jade/scss/_service.scss */
+  #service-page-detail .content-detail-service {
+    display: table;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    z-index: 3;
+    position: relative; }
+  /* line 169, ../../jade/scss/_service.scss */
+  #service-page-detail .wrapper-content-service-page {
+    display: table-cell;
+    vertical-align: middle; }
+  /* line 173, ../../jade/scss/_service.scss */
+  #service-page-detail .size-content-service-page {
+    width: 455px;
+    margin: 0 auto;
+    background: #de5d38;
+    border-radius: 50%;
+    height: 455px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 86px 63px 94px 84px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 21px;
+    box-shadow: 10px 5px 63px -6px rgba(0, 0, 0, 0.8); }
+    /* line 186, ../../jade/scss/_service.scss */
+    #service-page-detail .size-content-service-page h3.title-content-detail-service {
+      font-size: 33px;
+      text-transform: uppercase;
+      line-height: 38px;
+      font-weight: 400;
+      margin-bottom: 13px;
+      text-align: left; }
